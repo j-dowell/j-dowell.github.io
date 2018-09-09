@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
 
 body {
   color: #fff;
@@ -45,7 +45,7 @@ a:hover {
 
 .main-container {
   background-color: #fff;
-  max-width: 80%;
+  width: 80%;
 }
 
 
@@ -106,8 +106,12 @@ h2.title:after {
 }
 
 .main-name {
-  text-align: left;
+  text-align: center;
   font-size: 54px;
+}
+
+.web-dev {
+  text-align: center;
 }
 
 .contact-info {
@@ -175,15 +179,16 @@ div .skills {
 }
 
 .contact-list > li {
-  display: inline;
+  display: inline-block;
   padding: 10px;
   border-radius: 2px;
 }
 
+.contact-list-container {
+  margin: auto;
+}
 
 /* Employment/education */
-
-
 .employment-container {
   padding-top: 0;
   padding-bottom: 0;
@@ -304,6 +309,10 @@ i.fab:hover, i.fas:hover {
     text-align: center;
   }
 
+  .web-dev {
+    text-align: center;
+  }
+
   .summary-container h3 {
     font-size: 22px;
   }
@@ -312,18 +321,23 @@ i.fab:hover, i.fas:hover {
     text-align: center;
   }
 
+  .contact-list > li {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 2px;
+}
+
   .contact-list {
     justify-content: end;
   }
 }
 
-@media screen and (min-width: 480) and (max-width: 992) {
-  .img-container {
-    height: 300px;
-    overflow: hidden;
-  } 
-
+@media screen and (min-width: 480px) and (max-width: 992px) {
   .main-name {
+    text-align: center;
+  }
+
+  .web-dev {
     text-align: center;
   }
 
@@ -333,6 +347,13 @@ i.fab:hover, i.fas:hover {
 
   .summary-container {
     padding-top: 0;
+  }
+}
+
+
+@media (min-width: 1900px) {
+  .main-container {
+    max-width: 1700px;
   }
 }
 
