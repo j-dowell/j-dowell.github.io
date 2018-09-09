@@ -1,2 +1,2 @@
-# j-dowell.github.io
-Résumé
+[Résumé](https://j-dowell.github.io/)
+
