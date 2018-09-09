@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
 
 body {
   color: #fff;
@@ -15,7 +15,7 @@ body {
   border-top: 4px solid;
 }
 
-.row .project, .row .skills, .row.employment-container, .row {
+.row .project, .row .skills, .row.employment-container, .row, .summary-text, ul.contact-list {
   display: none;
 }
 
