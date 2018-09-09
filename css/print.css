@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+
+@page:right{
+  @bottom-right {
+    content: counter(page);
+  }
+}
+.print-hr-divider, #title-hr-divider {
+  width: 100%;
+  border-width: 4px;
+  border-color: black;
+}
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+i {
+  margin-right: 10px;
+}
+
+h1, h2, h3 { 
+  page-break-after: avoid;
+}
+
+h1 {
+  font-size: 24pt;
+  }
+  
+  h2 {
+  font-size: 14pt;
+  margin-top: 25px;
+  }
+  
+  aside h2 {
+  font-size: 18pt;
+  }
+ 
+
+  img {
+    display: none;
+  }

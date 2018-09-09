@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Dowell - Web Developer</title>
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" media='screen'>
+  <link href="css/print.css" rel="stylesheet" media="print">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Slide sections down on open
+    $('.project').slideDown('slow');
+    $('.row').slideDown('slow');
+    $('.contact-info').slideDown('slow');
+    $('.employment-container').slideDown('slow');
+    $('.employment').slideDown('slow');
+
+    // Hide/show section information when heading is clicked
+    $(".section-title").click(function(){
+        $(this).siblings().toggle('medium');
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <div class="container main-container">
+    <div class="row">
+      <div class="card summary-container col-xs-12 col-sm-7">
+        <div>
+          <h1 class="main-name">JAMES DOWELL</h1>
+          <h3 class='web-dev'>Full-Stack Web Developer</h3>
+          <hr id='title-hr-divider'>
+          <p class="summary-text">Web developer with analytical skills and a background in Economics, coupled with a unique skillset acquired during international work experience. Self-motivated, driven by pushing the boundaries of my knowledge. Eager to enter a progressive organisation and put to use my logical mindset and love of problem solving.</p>
+          <ul class="list-unstyled contact-list col-xs-12">
+            <li>
+              <a href="mailto:james.s.dowell@gmail.com"><i class="fas fa-envelope"></i></a>james.s.dowell@gmail.com
+            </li>
+            <li>
+              <a href="tel:+17786971129"><i class="fas fa-phone"></a></i>778-697-1129
+            </li>
+            <li>
+              <a href="https://www.github.com/j-dowell/" target="_blank"><i class="fab fa-github"></a></i>/j-dowell
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/james-dowell/" target="_blank"><i class="fab fa-linkedin-in"></i></a>/james-dowell
+            </li>
+            <li>
+              <a href="https://jamesdowell.photography" target="_blank"><i class="fas fa-camera"></i></a>Photography Portfolio
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class='print-hr-divider'>
+
+      <div class="card col-xs-12 col-sm-12">
+        <h2 class="title section-title">SKILLS</h2>
+        <div class="row skills">
+          <div class="card col-xs-12 col-sm-4 skill-set">
+            <h4>LANGUAGES/FRAMEWORKS</h4>
+            <p>JavaScript, HTML/CSS/SASS, Ruby, Ruby on Rails, Node.js, Express, React, jQuery, Bootstrap, Knex, EJS</p>
+          </div>
+          <div class="card col-xs-12 col-sm-4 skill-set">
+            <h4>SYSTEMS/DATABASES</h4>
+            <p>Git/GitHub, MongoDB, SQL, PostgreSQL, Heroku</p>
+          </div>
+          <div class="card col-xs-12 col-sm-4 skill-set">
+              <h4>TESTING</h4>
+              <p>Mocha, Chai</p>
+            </div>
+          <div class="card col-xs-12 col-sm-4 skill-set">
+            <h4>OTHER</h4>
+            <p>Adobe Photoshop & Lightroom, Spanish</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class='print-hr-divider'>
+      
+      <div class="card col-xs-12 col-sm-12">
+          <h2 class="title section-title">PROJECTS</h2>
+      <div class="row projects">
+        <div class="card project col-xs-12 col-sm-4">
+          <a href="https://github.com/j-dowell/chatty" target="_blank"><img src="img/Chatty2.png" alt="Chatty App Project" />
+          <h4>ChatterBox</h4></a>
+          <p>A real-time chat app that allow users to send and receive messages, change their username and view the number of online users.</p>
+          <p><strong>Tech stack: React, Node, Express, WebSockets, Webpack and Babel.</strong></p>
+        </div>
+        <div class="card project col-xs-12 col-sm-4">
+          <a href="https://github.com/j-dowell/midterm_project" target="_blank"><img src="img/Franklins.png" alt="Franklin's Project" />
+          <h4>Franklin's</h4></a>
+          <p>Food ordering app, allowing a restaurant owner to accept orders, notify customers and manage menu items.<br>Customers can order items, view order history and are notified via SMS.</p>
+          <p><strong>Tech stack: Node, Express, AJAX, PostgreSQL, jQuery, Twilio and Bootstrap</strong></p>
+        </div>
+        <div class="card project col-xs-12 col-sm-4">
+          <a href="https://github.com/j-dowell/url-shortener" target="_blank"><img src="img/TinyApp.png" alt="TinyApp Project" />
+          <h4>TinyApp</h4></a>
+          <p>Users can create and maintain a list of shortened urls.</p>
+          <p><strong>Tech stack: Node, Express, MongoDB, jQuery</strong></p>
+        </div>
+        <div class="card project col-xs-12 col-sm-4">
+          <a href="https://github.com/j-dowell/tweeter" target="_blank"><img src="img/Tweeter.png" alt="Tweeter Project" />
+          <h4>Tweeter</h4></a>
+          <p>Twitter clone to practice creating a SPA along with honing front-end styling and interactivity</p>
+          <p><strong>Tech stack: Node, Express, MongoDB, jQuery</strong></p>
+        </div>
+        <div class="card project col-xs-12 col-sm-4">
+        <a href="https://jamesdowell.photography" target="_blank"><img src="img/JDPhoto.png" alt="Photography Portfolio" />
+          <h4>Photography Portfolio</h4></a>
+          <p>My entry into making websites; a pet project designed with Wordpress to showcase my favourite travel photos</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <hr class='print-hr-divider'>
+
+    <div class="card col-xs-12 col-sm-12">
+      <h2 class="title section-title">EDUCATION</h2>
+      <div class="card col-xs-12 col-sm-12">
+        <section class="education">
+          <div class='place-time'>
+            <h4>Lighthouse Labs, Vancouver</h4>
+            <h5 class='date'>2018</h5>
+          </div>  
+          <p>Web Development Diploma</p>
+        </section>
+          <section class="education">
+            <div class='place-time'>
+              <h4>The University of Nottingham, UK</h4>
+              <h5>2013</h5>
+            </div>
+            <p>Economics BSc Hons (Upper second-class)</p>
+          </section>
+        </div>
+      </div>
+
+      <hr class='print-hr-divider'>
+
+      <div class="card col-xs-12 col-sm-12">
+      <h2 class="title section-title">EMPLOYMENT</h2>
+      <div class="card col-xs-12 col-sm-12 employment-container">
+        <section class="employment">
+            <div class='place-time'>
+            <h4>Travel/International Work Experience</h4>
+            <h5 class='date'>2014 - 2018</h5>
+            </div>
+            <h5>Australia, New Zealand, Asia, South America, Europe</h5>
+            <ul class='bullet-list'>
+            </ul>
+        </section>
+        <section class="employment">
+          <div class='place-time'>
+          <h4>Manager - Leroy Espresso</h4>
+          <h5 class='date'>Jan. 2016 - May 2017</h5>
+          </div>
+          <h5>Melbourne, Australia</h5>
+          <ul class='bullet-list'>
+            <li>
+              Accountable for scheduling, supervising and motivating a staff of up to 15 employees at a fast paced specialty cafe
+            </li>
+            <li>
+              Implemented stricter stock management, resulting in a 10% reduction in front of house costs
+            </li>
+            <li>
+              Reduced staff turnover by a factor of 5 through extra training, development and communication
+            </li>
+            <li>
+              Performed market research on competition to assist in forming an identity for the business
+            </li>
+          </ul>
+      </section>
+        <section class="employment">
+          <div class='place-time'>
+            <h4>Sales Consultant - Oz Green Homes</h4>
+            <h5 class='date'>Jul. 2015 - Jan 2016</h5>
+          </div>
+          <h5>Melbourne, Australia</h5>
+          <ul class='bullet-list'>
+            <li>
+              Provided rate comparisons to prospective clients in a friendly and professional manner
+            </li>
+            <li>
+              Consistently met KPIs and exceeded the weekly sales target by a factor of 2
+              </li>
+            <li>
+              Took on the responsibility of training 1 to 3 new employees each week along side usual duties
+              </li>
+            </ul>
+        </section>
+        <section class="employment">
+          <div class='place-time'>
+            <h4>IT & Facilities Officer - Gumala Aboriginal Corporation</h4>
+            <h5 class='date'>Aug. 2014 - Dec. 2014</h5>
+          </div>
+          <h5>Perth, Australia</h5>
+          <ul class='bullet-list'>
+            <li>
+              Compiled detailed reports with cost-benefit analysis on the purchase of company assets
+              </li>
+            <li>
+              Liaised with property managers, external suppliers and other branches of Gumala
+              </li>
+            <li>
+              Data entry with Excel; updated spreadsheets regarding invoice summaries, asset registers etc
+            </li>
+          </ul>
+        </section>
+        <section class="employment">
+          <div class='place-time'>
+            <h4>Marketing Assistant - Hitachi Medical Systems</h4>
+            <h5 class='date'>Sep. 2012 - Oct. 2013</h5>
+          </div>
+        <h5>Wellingborough, UK</h5>
+          <ul class='bullet-list'>
+            <li>
+                Maintained CRM database with Excel, made improvements to formatting and use of formulas
+            </li>
+            <li>
+                Proofread PowerPoint presentations and marketing campaigns
+            </li>
+            <li>
+                Translated complex clinical documents and presentations from Spanish to English
+            </li>
+          </ul>
+        </section>
+      </div>
+  </div>
+
+  <hr class='print-hr-divider'>
+
+    <div class="card col-xs-12 col-sm-12">
+      <h2 class="title section-title">OTHER</h2>
+      <div class="card col-xs-12 col-sm-12">
+        <section class="employment">
+          <h4>AWARDS</h4>
+          <p>Duke of Edinburgh Award: Bronze, Silver & Gold - 2007</p>
+        </section>
+        <section class="employment">
+          <h4>INTERESTS</h4>
+          <p>Guitar, hiking, photography, cookery (Asian & Italian)</p>
+        </section>
+      </div>
+    </div>  
+  </div>
+</div>  
+
+</body>
+
+</html>
