@@ -46,7 +46,7 @@ a:hover {
 
 .main-container {
   background-color: #fff;
-  width: 75%;
+  width: 85%;
 }
 
 
@@ -171,7 +171,9 @@ div .skills {
 
 /*--- Contact info ---*/
 
-
+ul.list-unstyled.contact-list.col-xs-12 {
+  display: flex;
+}
 .contact-list {
   color: #252525;
   display: flex;
