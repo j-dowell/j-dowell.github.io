@@ -170,6 +170,16 @@ h2.title:after {
   display: none;
 } */
 
+#skill-icon:hover {
+  cursor: default;
+}
+#skill-icon:after {
+  cursor: default;
+}
+#skill-icon:before {
+  cursor: default;
+}
+
 div .skills {
   width: 100%;
 }
