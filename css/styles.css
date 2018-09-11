@@ -19,6 +19,10 @@ body {
   display: none;
 }
 
+.mobile-date {
+  display: none;
+}
+
 a {
   transition: 0.6s;
   opacity: 0.9;
@@ -46,7 +50,7 @@ a:hover {
 
 .main-container {
   background-color: #fff;
-  width: 85%;
+  width: 75%;
 }
 
 
@@ -153,6 +157,9 @@ h2.title:after {
 }
 
 /*--- Skills ---*/
+#skills-container {
+  display: none;
+}
 div .skills {
   width: 100%;
 }
@@ -166,7 +173,13 @@ div .skills {
 }
 
 .skill-set {
-  width: 100%;
+  width: 33%;
+
+}
+
+#skills-container {
+  display: flex;
+  text-align: center;
 }
 
 /*--- Contact info ---*/
@@ -198,6 +211,7 @@ ul.list-unstyled.contact-list.col-xs-12 {
 }
 
 .bullet-list {
+  padding-left: 20px;
   color: black;
 }
 
@@ -217,14 +231,28 @@ section.employment h5, section.education h5 {
   font-weight: 500;
 }
 
+.LHL {
+  width: 10%;
+  height: 10%;
+  /* display: inline; */
+}
+
+.education-name-award {
+  display: inline-block;
+}
 
 .place-time {
   display: flex;
   justify-content: space-between;
 }
 
-h5.date {
+h5.date, h5.education-date {
   padding-top: 10px;
+}
+
+li {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*--- Projects ---*/
@@ -260,8 +288,10 @@ a:hover {
 }
 
 /*--- Icons ---*/
-
-i.fab, i.fas {
+.fa-chevron-right, .fa-code, .fa-database, .fa-toolbox {
+  opacity: 0.9;
+}
+i.fab, i.fas, i.far {
   font-size: 1.5rem;
   color: white;
   position: relative;
@@ -272,7 +302,7 @@ i.fab, i.fas {
   transition: color 0.2s ease, background-color 0.2s ease, transform 0.5s ease;
 }
 
-i.fab:after, i.fas:after {
+i.fab:after, i.fas:after, i.far:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -283,24 +313,24 @@ i.fab:after, i.fas:after {
   transition: all 0.4s ease;
 }
 
-i.fab:hover:after, i.fas:hover:after {
+i.fab:hover:after, i.fas:hover:after, i.far:hover:after {
   transform: scale(1.0);
   box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
 }
 
-i.fab, i.fas {
+i.fab, i.fas, i.far {
   background-color: rgb(0, 57, 114);
 }
 
-i.fab:hover, i.fas:hover {
+i.fab:hover, i.fas:hover, i.far:hover {
   color: rgb(0, 57, 114);
 }
 
-i.fab:after, i.fas:after {
+i.fab:after, i.fas:after, i.far:after {
   border-color: rgb(0, 57, 114);
 }
 
-i.fab:hover, i.fas:hover {
+i.fab:hover, i.fas:hover, i.far:hover {
   background-color: transparent;
   transform: rotate(360deg);
   cursor: pointer;
@@ -314,6 +344,10 @@ i.fab:hover, i.fas:hover {
   a {
     opacity: 1;
   }
+
+  .bullet-list {
+    padding-left: 0px;
+  }
   .main-name {
     font-size: 45px;
     text-align: center;
@@ -322,6 +356,14 @@ i.fab:hover, i.fas:hover {
 
   li {
     font-size: 17px;
+  }
+
+  .mobile-date {
+    display: inline
+  }
+
+  .date {
+    display: none;
   }
 
   .web-dev {
@@ -347,6 +389,23 @@ i.fab:hover, i.fas:hover {
   .contact-list {
     justify-content: end;
   }
+}
+
+@media screen and (max-width: 500px) {
+  #skills-container {
+    display: inline;
+  }
+  .icon-contact-list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .skill-set {
+    width: 100%;
+
+  }
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 992px) {
@@ -376,7 +435,7 @@ i.fab:hover, i.fas:hover {
 
 /* Icon media queries */
 @media (min-width:601px) {
-	i.fab, i.fas {
+	i.fab, i.fas, i.far {
 		padding:10px;
 		margin:5px;
 		font-size:2rem;
@@ -384,12 +443,12 @@ i.fab:hover, i.fas:hover {
 }
 
 @media (min-width:993px) {
-	i.fab, i.fas {
+	i.fab, i.fas, i.far {
 		padding:12px;
 		margin:5px;
 		font-size:2rem;
 	}
-	i.fab:after, i.fas:after {
+	i.fab:after, i.fas:after, i.far:after {
 		border-width:3px;
 		top:0px;
 		left:-1px;
