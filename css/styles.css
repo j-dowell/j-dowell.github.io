@@ -14,10 +14,10 @@ body {
   width: 100%;
   border-top: 3px solid;
 }
-
+/* 
 .row .project, .row .skills, .row.employment-container, .row, .summary-text, ul.contact-list {
   display: none;
-}
+} */
 
 .mobile-date {
   display: none;
