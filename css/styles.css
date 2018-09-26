@@ -166,6 +166,11 @@ h2.title:after {
   font-weight: 500;
 }
 
+.icon-contact-list {
+  font-size: 18px;
+}
+
+
 
 /*--- Skills ---*/
 #skills-container {
@@ -204,6 +209,13 @@ div .skills {
   text-align: center;
 }
 
+.skills-title {
+  font-size: 20px;
+}
+
+.skills-body {
+  font-size: 18px;
+}
 /*--- Contact info ---*/
 
 ul.list-unstyled.contact-list.col-xs-12 {
@@ -277,6 +289,10 @@ li {
   padding-bottom: 5px;
 }
 
+.education-award {
+  font-size: 18px;
+}
+
 /*--- Projects ---*/
 
 div .row .projects {
@@ -299,6 +315,10 @@ div .row .projects {
   font-weight: 500;
   font-size: 12px;
   padding-bottom: 5px;
+}
+
+.project-title {
+  text-transform: uppercase;
 }
 
 a:hover {
