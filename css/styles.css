@@ -487,7 +487,7 @@ i.fab:hover, i.fas:hover, i.far:hover {
 	i.fab, i.fas, i.far {
 		padding:10px;
 		margin:5px;
-		font-size:2rem;
+		font-size:1.5rem;
 	}
 }
 
@@ -495,7 +495,7 @@ i.fab:hover, i.fas:hover, i.far:hover {
 	i.fab, i.fas, i.far {
 		padding:12px;
 		margin:5px;
-		font-size:2rem;
+		font-size:1.5rem;
 	}
 	i.fab:after, i.fas:after, i.far:after {
 		border-width:3px;
